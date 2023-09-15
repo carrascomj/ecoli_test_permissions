@@ -36,6 +36,6 @@ memote report history --filename="${output}"
 # Add, commit and push the files.
 git add "${output}"
 git commit -m "Github actions report # ${GITHUB_SHA}"
-git push --quiet "https://github.com/${GITHUB_REPOSITORY}.git" "${deployment}" > /dev/null
+git push "https://github.com/${GITHUB_REPOSITORY}.git" "${deployment}"
 
 echo "Your new report will be visible at https://carrascomj.github.io/ecoli_test_permissions in a moment."
